@@ -6,4 +6,9 @@ mongoose.connection.once('open',()=>{
 }).on('error',function(error){
     console.log('Connection Error:',error)
 })
+// beforeEach(function(done){
+//     mongoose.connection.collection.mariochars.drop(function(){
+//     done();
+//     })
+// })
 const app=express()

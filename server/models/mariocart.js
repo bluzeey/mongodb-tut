@@ -1,4 +1,3 @@
-import { Module } from 'module';
 import mongoose from 'mongoose'
 const Schema=mongoose.Schema;
 
@@ -7,6 +6,5 @@ const MarioCharSchema=new Schema({
     weight:Number
 })
 
-const MarioChar=mongoose.model('marioChar',MarioCharSchema)
+export const MarioChar=mongoose.model('marioChar',MarioCharSchema)
 
-Module.exports=MarioChar
